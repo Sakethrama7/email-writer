@@ -16,6 +16,17 @@ public class EmailFormController {
 
     private final EmailGeneratorService emailGeneratorService;
 
+    // Redirect root URL to /home
+    @GetMapping
+    public String rootRedirect() {
+        return "redirect:/home";
+    }
+
+    @GetMapping("/home")
+    public String homePage() {
+        return "home";
+    }
+
     @GetMapping("/generate")
     public String showForm(Model model) {
         // This method shows the form initially with no generated reply.
@@ -35,14 +46,9 @@ public class EmailFormController {
         String generatedReply = emailGeneratorService.generateEmailReply(emailRequest);
         model.addAttribute("generatedReply", generatedReply);
 
-        // This returns the same page but now with the 'generatedReply' variable populated.
         return "index";
     }
-
-    @GetMapping("/home")
-    public String homePage(){
-        return "home";
-    }
 }
+
 
 
