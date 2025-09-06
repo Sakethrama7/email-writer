@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Email Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-4 md:p-8"
+  >
+    <!-- Hero Section -->
+    <div
+      class="container mx-auto max-w-6xl bg-gray-800 rounded-3xl shadow-xl overflow-hidden mb-12"
+    >
+      <div
+        class="p-8 md:p-16 flex flex-col md:flex-row items-center justify-between"
+      >
+        <!-- Left Section - Hero Text & CTA -->
+        <div class="md:w-1/2 text-center md:text-left md:pr-8">
+          <h1 class="text-4xl lg:text-6xl font-extrabold mb-4 leading-tight">
+            Craft Emails Instantly with AI
+          </h1>
+          <p class="text-lg text-gray-400 mb-8">
+            Tired of writer's block? Our Smart Email Assistant helps you
+            generate professional, personalized emails in seconds.
+          </p>
+          <a href="/generate" class="inline-block">
+            <button
+              class="bg-indigo-600 text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-indigo-700 transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              Get Started
+            </button>
+          </a>
+        </div>
+
+        <!-- Right Section - Hero Image -->
+        <div class="mt-8 md:mt-0 md:w-1/2">
+          <img
+            src="https://www.shutterstock.com/image-vector/digital-hand-email-sign-ai-600nw-2445153767.jpg"
+            alt="AI email writing interface on a computer screen."
+            class="w-full object-cover max-h-82 rounded-2xl"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section with in-row layout -->
+    <div class="container mx-auto max-w-6xl mb-12">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12">
+        Why Choose Us?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+        <!-- Feature 1: Blazing Fast -->
+        <div
+          class="flex flex-col items-center text-center p-8 bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="bg-indigo-600 text-white rounded-full p-4 mb-6">
+            <svg
+              class="w-10 h-10"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-500">
+            Blazing Fast
+          </h3>
+          <p class="text-gray-400">
+            Generate complete email drafts in the blink of an eye. Say goodbye
+            to writer's block and hello to productivity.
+          </p>
+        </div>
+
+        <!-- Feature 2: Fully Customizable -->
+        <div
+          class="flex flex-col items-center text-center p-8 bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="bg-emerald-600 text-white rounded-full p-4 mb-6">
+            <svg
+              class="w-10 h-10"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2 text-emerald-500">
+            Fully Customizable
+          </h3>
+          <p class="text-gray-400">
+            Adjust the tone, style, and content to fit your unique needs.
+            Whether it's formal or friendly, our AI adapts to you.
+          </p>
+        </div>
+
+        <!-- Feature 3: Professional Quality -->
+        <div
+          class="flex flex-col items-center text-center p-8 bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="bg-rose-600 text-white rounded-full p-4 mb-6">
+            <svg
+              class="w-10 h-10"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 018.577 15.038l-1.042 3.518L21 21l-3.518-1.042-3.518-1.042"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2 text-rose-500">
+            Professional Quality
+          </h3>
+          <p class="text-gray-400">
+            Receive well-structured, grammar-perfect emails every time. Impress
+            clients and colleagues with impeccable writing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA Section -->
+    <div
+      class="container mx-auto max-w-6xl bg-indigo-600 text-white text-center p-8 md:p-12 rounded-2xl shadow-lg mb-12"
+    >
+      <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Workflow?</h2>
+      <p class="text-lg opacity-90 mb-8">
+        Stop spending hours on emails and start focusing on what matters.
+      </p>
+      <a href="/generate" class="inline-block">
+        <button
+          class="bg-white text-indigo-600 font-bold py-3 px-10 rounded-full shadow-lg hover:bg-gray-200 transform transition duration-300 hover:scale-105"
+        >
+          Generate Your First Email
+        </button>
+      </a>
+    </div>
+  </body>
+</html>
