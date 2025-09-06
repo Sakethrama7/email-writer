@@ -35,7 +35,7 @@ public class EmailFormController {
     @GetMapping("/generate")
     public String showForm(Model model) {
         // This method shows the form initially with no generated reply.
-        return "index";
+        return "main";
     }
 
     @PostMapping("/generate-form")
@@ -51,7 +51,7 @@ public class EmailFormController {
         String generatedReply = emailGeneratorService.generateEmailReply(emailRequest);
         model.addAttribute("generatedReply", generatedReply);
 
-        return "index";
+        return "main";
     }
 }
 
